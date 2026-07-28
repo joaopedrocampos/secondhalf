@@ -8,7 +8,7 @@
 
 Somebody wore this shirt to the match of their life. To the night they'll never forget. That's where the marks came from — and that's why they matter.
 
-**Second Half doesn't sell jerseys — it sells stories that start their second chapter with you.** Real vintage football shirts that have already lived. Not mint pieces for glass cases. Not factory fakes with no past. Shirts with a first half behind them — looking for someone to write the second.
+**Second Half doesn't sell jerseys — it sells stories that start their second chapter with you.** Real vintage football shirts that have already lived: shirts with a first half behind them, found one by one, looking for someone to write the second.
 
 **Found, not stocked.** Every shirt is scavenged one by one from individual sellers — never bought in batches. Uniqueness isn't a marketing claim; it's how the shop works. (Pricing target ~€100 is internal positioning — see voice rules: price is a consequence, never an argument.)
 
@@ -23,17 +23,21 @@ Somebody wore this shirt to the match of their life. To the night they'll never 
 | **Unlike** | Archive resellers (museum energy, premium prices) and replica/fake sellers (no past, no truth) |
 | **Because** | Every mark is a memory, and honesty about them is our signature |
 
-**The two enemies (never imitate, always contrast):**
-1. **The glass case** — mint-condition worship, €400 price tags, shirts as investments.
-2. **The factory fake** — retro reprints with no history.
+**What we are not (internal compass only — never public copy):**
+1. **The collectors' market** — mint pieces, archive prices, shirts as investments. A valid *cousin* market, not an enemy. It's simply not ours, and we never define ourselves against it in public.
+2. **The factory reprint** — retro remakes with no past to offer.
+
+The contrast above exists so *we* stay oriented. **In public, we only talk about ourselves**: what our shirts have lived, and whose turn is next.
 
 **The gap we own:** competitors (Classic Football Shirts, Cult Kits) tell *football's* stories — famous matches, legendary kits. Second Half tells *people's* stories — the one who wore it, the one who'll wear it next.
 
 ## 3. Manifesto
 
-1. **Better than new.**
+1. **Every shirt has lived a first half.**
 2. **Every mark is a memory.**
-3. **No glass cases. Ever.**
+3. **The second half is yours.**
+
+Three lines, one arc: a past, the proof, your turn. No comparisons, no rivals — the manifesto only ever talks about us.
 
 ## 4. Verbal identity
 
@@ -60,6 +64,7 @@ Somebody wore this shirt to the match of their life. To the night they'll never 
 - Stories may be known or imagined — imagined ones are written so it's clear ("The fade says summers of five-a-side. The rest is yours to write."). Never fabricate provenance as fact.
 - Football-native, never gatekeeping. No "premium", no "authentic vintage!!", no "rare investment piece", no SALE shouting.
 - **Price is a consequence, never an argument.** It never appears on first-touch surfaces (bio, hero, packaging, ads) — only on the listing itself. People should fall for the shirt and the story, then be pleasantly surprised it isn't €250.
+- **We talk about ourselves, never about others.** No comparisons, no rivals, no defending. "Better than new" fails this test (if you have to say you're better, you're not); "No glass cases" fails it too (it drags collectors into our story — they're cousins with a valid market, not enemies). Public copy describes what our shirts have lived and whose turn is next. Full stop.
 - **The storyteller opens; the archivist follows.** The story comes first, always; the honest marks come once attention is earned. Condition is never the headline.
 - **The shirts are never "worn", "used" or "second-hand" — anywhere.** Those labels demean them. The shirts *have lived*, *have a past*, *have a first half behind them*, *carry stories*. The marks stay honest (that's the archivist's job), but the vocabulary around the shirt is always about life, never about wear. (The *verb* is fine when a person is doing it — "I've worn it to every derby" is a wearer celebrating. The banned thing is the label on the shirt.)
 
@@ -130,4 +135,5 @@ Real vintage, found one by one.
 - 2026-07-29 — Palette A "Sunday League" chosen over Golden Hour (B) and Kneipe (C). Black+yellow banned (Dortmund); "brand wears no club's colours" rule adopted.
 - Website = prototype only for now; Instagram launches brand-first (films, marks, manifesto), selling via Stories/Highlights.
 - 2026-07-29 — Bio rewritten story-first ("Every shirt has lived a first half…"). New rules: price is a consequence, never an argument (no price on first-touch surfaces); "Found, not stocked" adopted as sourcing principle (shirts scavenged one by one, never batches).
-- 2026-07-29 — "Worn"/"used"/"second-hand" banned from all brand language (demeaning to the shirts — they *have lived*). Manifesto line 1 changed: "Worn, not worn out." → "Better than new."
+- 2026-07-29 — "Worn"/"used"/"second-hand" banned from all brand language (demeaning to the shirts — they *have lived*). Manifesto line 1 briefly became "Better than new."
+- 2026-07-29 — New voice principle: **we talk about ourselves, never about others** — no comparatives ("Better than new" reads as fake bragging), no positioning against collectors (cousins, not enemies). Manifesto rewritten as the bio's arc: "Every shirt has lived a first half. / Every mark is a memory. / The second half is yours."
