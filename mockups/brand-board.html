@@ -9,12 +9,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,400;1,9..144,600&family=Archivo:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
   :root {
-    --night: #131110;
-    --surface: #1C1916;
-    --paper: #F2EDE3;
-    --amber: #E5A33C;
-    --muted: #918878;
-    --line: #2E2A24;
+    --paper: #F3EDDF;
+    --ink: #2E2419;
+    --pitch: #35573B;
+    --sepia: #8C7B63;
+    --card: #FAF7EF;
+    --line: #DDD3BF;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -22,8 +22,8 @@
   html { -webkit-font-smoothing: antialiased; }
 
   body {
-    background: var(--night);
-    color: var(--paper);
+    background: var(--paper);
+    color: var(--ink);
     font-family: 'Archivo', -apple-system, sans-serif;
     line-height: 1.6;
   }
@@ -36,7 +36,7 @@
 
   a:focus-visible,
   button:focus-visible {
-    outline: 2px solid var(--amber);
+    outline: 2px solid var(--pitch);
     outline-offset: 3px;
   }
 
@@ -51,7 +51,7 @@
     font-size: 12px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: var(--amber);
+    color: var(--pitch);
     margin-bottom: 40px;
     display: block;
   }
@@ -61,7 +61,7 @@
     font-size: 11px;
     letter-spacing: 0.14em;
     text-transform: uppercase;
-    color: var(--muted);
+    color: var(--sepia);
   }
 
   /* ========== progressive enhancement guard (optional anim) ========== */
@@ -71,7 +71,7 @@
 
   /* ========== monogram ========== */
   .monogram-wrap { display: inline-flex; flex-direction: column; align-items: center; gap: 10px; }
-  .monogram-lockup-time { font-size: 11px; color: var(--muted); }
+  .monogram-lockup-time { font-size: 11px; color: var(--sepia); }
 
   /* ========== SECTION 0 — COVER ========== */
   .cover {
@@ -91,13 +91,13 @@
     font-size: clamp(40px, 9vw, 64px);
     letter-spacing: -0.01em;
   }
-  .cover-wordmark span { color: var(--amber); }
+  .cover-wordmark span { color: var(--pitch); }
   .cover-tagline {
     font-family: 'Fraunces', serif;
     font-style: italic;
     font-weight: 400;
     font-size: clamp(18px, 3vw, 24px);
-    color: var(--muted);
+    color: var(--sepia);
   }
   .cover-footnote {
     position: absolute;
@@ -107,7 +107,7 @@
     text-align: center;
     font-family: 'Space Mono', monospace;
     font-size: 12px;
-    color: var(--muted);
+    color: var(--sepia);
   }
 
   /* ========== SECTION 01 — THE IDEA ========== */
@@ -125,7 +125,7 @@
   }
   .idea-copy {
     font-size: 17px;
-    color: var(--muted);
+    color: var(--sepia);
     max-width: 56ch;
   }
   .manifesto-strip {
@@ -139,7 +139,7 @@
   .manifesto-item .index {
     font-family: 'Space Mono', monospace;
     font-size: 12px;
-    color: var(--amber);
+    color: var(--pitch);
     margin-bottom: 14px;
     display: block;
   }
@@ -159,7 +159,7 @@
     border: 1px solid var(--line);
   }
   .logo-tile {
-    background: var(--night);
+    background: var(--card);
     min-height: 220px;
     display: flex;
     flex-direction: column;
@@ -169,26 +169,26 @@
     padding: 32px;
     text-align: center;
   }
-  .logo-tile.on-night { background: var(--night); }
-  .logo-tile.on-amber { background: var(--amber); }
+  .logo-tile.on-night { background: var(--card); }
+  .logo-tile.on-amber { background: var(--pitch); }
   .tile-content { display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap; }
   .tile-caption {
     font-family: 'Space Mono', monospace;
     font-size: 11px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: var(--muted);
+    color: var(--sepia);
   }
-  .logo-tile.on-amber .tile-caption { color: var(--night); opacity: 0.7; }
+  .logo-tile.on-amber .tile-caption { color: var(--paper); opacity: 0.7; }
   .lockup-wordmark {
     font-family: 'Fraunces', serif;
     font-weight: 900;
     font-size: 30px;
     letter-spacing: -0.01em;
   }
-  .lockup-wordmark span { color: var(--amber); }
-  .lockup-wordmark.on-night-text { color: var(--night); }
-  .lockup-wordmark.on-night-text span { color: var(--night); }
+  .lockup-wordmark span { color: var(--pitch); }
+  .lockup-wordmark.on-night-text { color: var(--paper); }
+  .lockup-wordmark.on-night-text span { color: var(--paper); }
   .logo-tile svg { width: 64px; height: 64px; }
 
   /* ========== SECTION 03 — COLOUR ========== */
@@ -208,11 +208,11 @@
     font-family: 'Space Mono', monospace;
     font-size: 12px;
     line-height: 1.7;
-    color: var(--muted);
+    color: var(--sepia);
   }
-  .swatch-meta strong { color: var(--paper); display: block; font-size: 13px; }
+  .swatch-meta strong { color: var(--ink); display: block; font-size: 13px; }
   .colour-note {
-    color: var(--muted);
+    color: var(--sepia);
     font-size: 16px;
     max-width: 62ch;
   }
@@ -227,7 +227,7 @@
     margin-bottom: 40px;
   }
   .voice-panel {
-    background: var(--surface);
+    background: var(--card);
     padding: 56px 48px;
     display: flex;
     flex-direction: column;
@@ -241,7 +241,7 @@
     font-style: italic;
     font-weight: 400;
     font-size: clamp(20px, 2.4vw, 30px);
-    color: var(--paper);
+    color: var(--ink);
     line-height: 1.4;
   }
   .archivist-list {
@@ -253,11 +253,11 @@
   .archivist-list li {
     font-family: 'Space Mono', monospace;
     font-size: 13px;
-    color: var(--paper);
+    color: var(--ink);
   }
-  .archivist-list .plus { color: var(--amber); margin-right: 8px; }
-  .voices-note { color: var(--muted); font-size: 16px; max-width: 62ch; margin-bottom: 12px; }
-  .voices-subnote { font-family: 'Space Mono', monospace; font-size: 12px; color: var(--muted); }
+  .archivist-list .plus { color: var(--pitch); margin-right: 8px; }
+  .voices-note { color: var(--sepia); font-size: 16px; max-width: 62ch; margin-bottom: 12px; }
+  .voices-subnote { font-family: 'Space Mono', monospace; font-size: 12px; color: var(--sepia); }
 
   /* ========== SECTION 05 — THE SIGNATURE ========== */
   .signature-layout {
@@ -268,14 +268,29 @@
   }
   .signature-stage {
     position: relative;
-    background: var(--surface);
+    background: var(--card);
     border: 1px solid var(--line);
     min-height: 480px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
+  .jersey-wrap { position: relative; display: inline-block; }
   .signature-stage svg.jersey { width: 320px; height: auto; }
+
+  .mark {
+    position: absolute;
+    color: var(--pitch);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1;
+    transform: translate(-50%, -50%);
+    text-shadow: 0 0 4px var(--paper), 0 0 8px var(--paper);
+  }
+  .mark-1 { left: 22.5%; top: 28%; }
+  .mark-2 { left: 75%; top: 20%; }
+  .mark-3 { left: 50%; top: 66%; }
+
   .callout {
     position: absolute;
     display: flex;
@@ -283,31 +298,55 @@
     gap: 10px;
     font-family: 'Space Mono', monospace;
     font-size: 11.5px;
-    color: var(--paper);
-  }
-  .callout .plus-glyph {
-    color: var(--amber);
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1;
+    color: var(--ink);
   }
   .callout .callout-label {
-    background: var(--night);
+    background: var(--card);
     padding: 6px 10px;
     white-space: nowrap;
     border: 1px solid var(--line);
   }
   .callout .connector {
     height: 1px;
-    background: var(--amber);
+    background: var(--pitch);
     display: inline-block;
   }
-  .callout-1 { top: 14%; left: 6%; }
-  .callout-1 .connector { width: 44px; }
-  .callout-2 { top: 8%; right: 4%; flex-direction: row-reverse; }
-  .callout-2 .connector { width: 34px; }
-  .callout-3 { bottom: 12%; right: 6%; flex-direction: row-reverse; }
-  .callout-3 .connector { width: 38px; }
+  /* left cuff — connector runs leftward off the jersey to the label */
+  .callout-1 {
+    top: 28%;
+    right: calc(100% - 22.5% + 10px);
+    transform: translateY(-50%);
+    flex-direction: row-reverse;
+  }
+  .callout-1 .connector { width: 20px; }
+  /* right shoulder — connector runs rightward off the jersey to the label */
+  .callout-2 {
+    top: 20%;
+    left: calc(75% + 10px);
+    transform: translateY(-50%);
+  }
+  .callout-2 .connector { width: 56px; }
+  /* chest, below the number — connector runs rightward, lower */
+  .callout-3 {
+    top: 66%;
+    left: calc(50% + 10px);
+    transform: translateY(-50%);
+  }
+  .callout-3 .connector { width: 150px; }
+
+  .mark-legend {
+    display: none;
+    list-style: none;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 24px;
+  }
+  .mark-legend li {
+    font-family: 'Space Mono', monospace;
+    font-size: 13px;
+    color: var(--ink);
+  }
+  .mark-legend .plus { color: var(--pitch); margin-right: 8px; }
 
   .signature-side h3 {
     font-family: 'Fraunces', serif;
@@ -316,7 +355,7 @@
     margin-bottom: 20px;
     line-height: 1.3;
   }
-  .signature-side p { color: var(--muted); font-size: 16px; }
+  .signature-side p { color: var(--sepia); font-size: 16px; }
 
   /* ========== SECTION 06 — PHOTOGRAPHY ========== */
   .frame-row {
@@ -343,18 +382,22 @@
     z-index: 2;
     text-shadow: 0 2px 12px rgba(0,0,0,0.6);
   }
+  /* golden hour — warm, sunset-toned, not black */
   .frame-1 {
+    background:
+      repeating-radial-gradient(circle at 30% 120%, rgba(255,255,255,0.06) 0px, rgba(255,255,255,0.06) 1px, transparent 1px, transparent 3px),
+      radial-gradient(circle at 75% 25%, rgba(255,214,140,0.9) 0%, rgba(232,157,72,0.55) 25%, transparent 55%),
+      linear-gradient(160deg, #F3C77E 0%, #D98A45 45%, #8A4A28 100%);
+  }
+  .frame.frame-1::after { box-shadow: inset 0 0 90px 30px rgba(50,25,8,0.35); }
+  /* night — flash-lit, dark, moody */
+  .frame-2 {
     background:
       repeating-radial-gradient(circle at 30% 130%, rgba(0,0,0,0.12) 0px, rgba(0,0,0,0.12) 1px, transparent 1px, transparent 3px),
       radial-gradient(circle at 12% 8%, rgba(229,163,60,0.35) 0%, rgba(229,163,60,0.12) 20%, transparent 55%),
       radial-gradient(ellipse at center, #1a1613 20%, #0a0908 100%);
   }
-  .frame-2 {
-    background:
-      repeating-linear-gradient(0deg, rgba(0,0,0,0.08) 0px, rgba(0,0,0,0.08) 1px, transparent 1px, transparent 4px),
-      radial-gradient(circle at 50% 100%, rgba(229,163,60,0.28) 0%, rgba(229,163,60,0.08) 25%, transparent 60%),
-      linear-gradient(180deg, #16261a 0%, #1a2e1f 55%, #0d1610 100%);
-  }
+  /* close — warm macro tones */
   .frame-3 {
     background:
       repeating-radial-gradient(circle at 60% 40%, rgba(0,0,0,0.18) 0px, rgba(0,0,0,0.18) 1px, transparent 1px, transparent 2.5px),
@@ -372,10 +415,10 @@
     margin-top: 16px;
     font-family: 'Space Mono', monospace;
     font-size: 12px;
-    color: var(--muted);
+    color: var(--sepia);
   }
   .frame-col { display: flex; flex-direction: column; }
-  .photo-note { color: var(--muted); font-size: 16px; max-width: 62ch; }
+  .photo-note { color: var(--sepia); font-size: 16px; max-width: 62ch; }
 
   /* ========== SECTION 07 — INSTAGRAM ========== */
   .insta-grid-layout {
@@ -392,7 +435,7 @@
   }
   .insta-tile {
     aspect-ratio: 1 / 1;
-    background: var(--surface);
+    background: var(--card);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -402,12 +445,12 @@
     overflow: hidden;
   }
   .insta-tile.film {
-    background: radial-gradient(circle at 50% 40%, rgba(229,163,60,0.18) 0%, transparent 55%), #15120f;
+    background: radial-gradient(circle at 50% 40%, rgba(140,123,99,0.28) 0%, transparent 55%), var(--card);
   }
   .insta-tile .mini-play {
     width: 28px;
     height: 28px;
-    border: 1px solid var(--amber);
+    border: 1px solid var(--pitch);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -418,22 +461,22 @@
     width: 0; height: 0;
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
-    border-left: 8px solid var(--amber);
+    border-left: 8px solid var(--pitch);
     margin-left: 2px;
   }
-  .insta-tile.marks { background: var(--surface); }
+  .insta-tile.marks { background: var(--card); }
   .insta-tile.marks span {
     font-family: 'Space Mono', monospace;
     font-size: 9.5px;
-    color: var(--amber);
+    color: var(--pitch);
     line-height: 1.4;
   }
-  .insta-tile.text-amber { background: var(--amber); color: var(--night); }
-  .insta-tile.text-amber span { font-family: 'Fraunces', serif; font-weight: 600; font-size: 14px; line-height: 1.25; }
-  .insta-tile.text-night { background: var(--night); }
-  .insta-tile.text-night span { font-family: 'Fraunces', serif; font-style: italic; font-size: 13px; color: var(--paper); line-height: 1.3; }
-  .insta-tile.text-surface { background: var(--surface); }
-  .insta-tile.text-surface span { font-family: 'Fraunces', serif; font-style: italic; font-size: 13px; color: var(--muted); line-height: 1.3; }
+  .insta-tile.text-amber { background: var(--pitch); color: var(--paper); }
+  .insta-tile.text-amber span { font-family: 'Fraunces', serif; font-weight: 600; font-size: 14px; line-height: 1.25; color: var(--paper); }
+  .insta-tile.text-night { background: var(--card); }
+  .insta-tile.text-night span { font-family: 'Fraunces', serif; font-style: italic; font-size: 13px; color: var(--ink); line-height: 1.3; }
+  .insta-tile.text-surface { background: var(--card); }
+  .insta-tile.text-surface span { font-family: 'Fraunces', serif; font-style: italic; font-size: 13px; color: var(--sepia); line-height: 1.3; }
 
   .insta-side h3 {
     font-family: 'Fraunces', serif;
@@ -443,14 +486,14 @@
     line-height: 1.3;
   }
   .insta-list { list-style: none; display: flex; flex-direction: column; gap: 14px; margin-bottom: 36px; }
-  .insta-list li { font-family: 'Space Mono', monospace; font-size: 13px; color: var(--paper); line-height: 1.6; }
-  .insta-list .plus { color: var(--amber); margin-right: 8px; }
+  .insta-list li { font-family: 'Space Mono', monospace; font-size: 13px; color: var(--ink); line-height: 1.6; }
+  .insta-list .plus { color: var(--pitch); margin-right: 8px; }
   .bio-box {
     border: 1px solid var(--line);
     padding: 20px 24px;
     font-family: 'Space Mono', monospace;
     font-size: 12px;
-    color: var(--muted);
+    color: var(--sepia);
     line-height: 1.7;
   }
 
@@ -465,12 +508,12 @@
     font-size: 12px;
     letter-spacing: 0.16em;
     text-transform: uppercase;
-    color: var(--amber);
+    color: var(--pitch);
     margin-bottom: 28px;
     padding-bottom: 16px;
     border-bottom: 1px solid var(--line);
   }
-  .voice-col.never .voice-col-header { color: var(--muted); }
+  .voice-col.never .voice-col-header { color: var(--sepia); }
   .voice-row {
     font-family: 'Fraunces', serif;
     font-size: 19px;
@@ -478,9 +521,9 @@
     border-bottom: 1px solid var(--line);
   }
   .voice-col.never .voice-row {
-    color: var(--muted);
+    color: var(--sepia);
     text-decoration: line-through;
-    text-decoration-color: rgba(145,136,120,0.5);
+    text-decoration-color: rgba(140,123,99,0.5);
   }
 
   /* ========== FOOTER ========== */
@@ -489,7 +532,7 @@
     text-align: center;
     font-family: 'Space Mono', monospace;
     font-size: 11px;
-    color: var(--muted);
+    color: var(--sepia);
   }
 
   /* ========== RESPONSIVE ========== */
@@ -510,18 +553,15 @@
     section { padding: 56px 20px; }
     .cover { padding: 64px 16px 40px; }
     .voice-panel { padding: 40px 28px; }
-    .callout .callout-label { font-size: 10px; padding: 5px 8px; }
-    .callout-1 { left: 2%; }
-    .callout-2 { right: 2%; }
-    .callout-3 { right: 2%; }
+    .signature-stage { flex-direction: column; gap: 20px; padding: 24px 0; }
+    .callout { display: none; }
+    .mark-legend { display: flex; }
   }
 
   @media (max-width: 375px) {
     section { padding: 48px 16px; }
     .idea-headline { font-size: 26px; }
     .signature-stage svg.jersey { width: 220px; }
-    .callout { font-size: 10px; }
-    .callout .connector { width: 20px !important; }
   }
 </style>
 </head>
@@ -532,8 +572,8 @@
 <section class="cover">
   <div class="monogram-wrap">
     <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Second Half halftime clock monogram">
-      <path d="M60 6 A54 54 0 0 0 60 114 Z" fill="none" stroke="#F2EDE3" stroke-width="2"/>
-      <path d="M62 6 A54 54 0 0 1 62 114 Z" fill="#E5A33C"/>
+      <path d="M60 6 A54 54 0 0 0 60 114 Z" fill="none" stroke="#2E2419" stroke-width="2"/>
+      <path d="M62 6 A54 54 0 0 1 62 114 Z" fill="#35573B"/>
     </svg>
   </div>
   <div class="cover-wordmark display">Second <span>Half</span></div>
@@ -575,8 +615,8 @@
     <div class="logo-tile on-night">
       <div class="tile-content">
         <svg viewBox="0 0 120 120" width="56" height="56" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Halftime clock monogram">
-          <path d="M60 6 A54 54 0 0 0 60 114 Z" fill="none" stroke="#F2EDE3" stroke-width="2"/>
-          <path d="M62 6 A54 54 0 0 1 62 114 Z" fill="#E5A33C"/>
+          <path d="M60 6 A54 54 0 0 0 60 114 Z" fill="none" stroke="#2E2419" stroke-width="2"/>
+          <path d="M62 6 A54 54 0 0 1 62 114 Z" fill="#35573B"/>
         </svg>
         <div class="lockup-wordmark display">Second <span>Half</span></div>
       </div>
@@ -593,8 +633,8 @@
     <div class="logo-tile on-night">
       <div class="tile-content">
         <svg viewBox="0 0 120 120" width="72" height="72" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Halftime clock monogram">
-          <path d="M60 6 A54 54 0 0 0 60 114 Z" fill="none" stroke="#F2EDE3" stroke-width="2"/>
-          <path d="M62 6 A54 54 0 0 1 62 114 Z" fill="#E5A33C"/>
+          <path d="M60 6 A54 54 0 0 0 60 114 Z" fill="none" stroke="#2E2419" stroke-width="2"/>
+          <path d="M62 6 A54 54 0 0 1 62 114 Z" fill="#35573B"/>
         </svg>
       </div>
       <span class="tile-caption mono">The halftime mark &mdash; avatar &amp; favicon</span>
@@ -603,12 +643,12 @@
     <div class="logo-tile on-amber">
       <div class="tile-content">
         <svg viewBox="0 0 120 120" width="56" height="56" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Halftime clock monogram, inverted">
-          <path d="M60 6 A54 54 0 0 0 60 114 Z" fill="none" stroke="#131110" stroke-width="2"/>
-          <path d="M62 6 A54 54 0 0 1 62 114 Z" fill="#131110"/>
+          <path d="M60 6 A54 54 0 0 0 60 114 Z" fill="none" stroke="#F3EDDF" stroke-width="2"/>
+          <path d="M62 6 A54 54 0 0 1 62 114 Z" fill="#F3EDDF"/>
         </svg>
         <div class="lockup-wordmark display on-night-text">Second Half</div>
       </div>
-      <span class="tile-caption mono">On floodlight amber</span>
+      <span class="tile-caption mono">On pitch green</span>
     </div>
   </div>
 </section>
@@ -618,27 +658,27 @@
   <span class="section-label mono">03 — Colour</span>
   <div class="swatch-row">
     <div class="swatch-card">
-      <div class="swatch-block" style="background:#131110;"></div>
-      <div class="swatch-meta mono"><strong>Night #131110</strong>the ground</div>
+      <div class="swatch-block" style="background:#F3EDDF;"></div>
+      <div class="swatch-meta mono"><strong>Paper #F3EDDF</strong>the ground</div>
     </div>
     <div class="swatch-card">
-      <div class="swatch-block" style="background:#E5A33C;"></div>
-      <div class="swatch-meta mono"><strong>Floodlight #E5A33C</strong>the recognition colour</div>
+      <div class="swatch-block" style="background:#2E2419;"></div>
+      <div class="swatch-meta mono"><strong>Espresso #2E2419</strong>the words</div>
     </div>
     <div class="swatch-card">
-      <div class="swatch-block" style="background:#F2EDE3;"></div>
-      <div class="swatch-meta mono"><strong>Paper #F2EDE3</strong>the words</div>
+      <div class="swatch-block" style="background:#35573B;"></div>
+      <div class="swatch-meta mono"><strong>Pitch #35573B</strong>the recognition colour</div>
     </div>
     <div class="swatch-card">
-      <div class="swatch-block" style="background:#918878;"></div>
-      <div class="swatch-meta mono"><strong>Muted #918878</strong>the whisper</div>
+      <div class="swatch-block" style="background:#8C7B63;"></div>
+      <div class="swatch-meta mono"><strong>Sepia #8C7B63</strong>the whisper</div>
     </div>
     <div class="swatch-card">
-      <div class="swatch-block" style="background:#1C1916;"></div>
-      <div class="swatch-meta mono"><strong>Surface #1C1916</strong>the cards</div>
+      <div class="swatch-block" style="background:#FAF7EF;"></div>
+      <div class="swatch-meta mono"><strong>Card #FAF7EF</strong>the surfaces</div>
     </div>
   </div>
-  <p class="colour-note">One colour does the remembering: floodlight amber. It appears in every photo, every post, every package &mdash; never as decoration, always pointing at something that matters.</p>
+  <p class="colour-note">One colour does the remembering: pitch green &mdash; the one ground every fan shares. It appears in every post and every package, never as decoration, always pointing at something that matters.</p>
 </section>
 
 <!-- ============ SECTION 04 — THE TWO VOICES ============ -->
@@ -667,42 +707,51 @@
   <span class="section-label mono">05 — The signature: mark annotations</span>
   <div class="signature-layout">
     <div class="signature-stage">
-      <svg class="jersey" viewBox="0 0 200 220" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Red and black striped jersey">
-        <defs>
-          <clipPath id="bodyBB"><path d="M62 30 L84 18 C89 30 111 30 116 18 L138 30 L138 205 L62 205 Z"/></clipPath>
-        </defs>
-        <path d="M62 30 L34 48 L46 84 L64 72 Z" fill="#1a1a1a"/>
-        <path d="M138 30 L166 48 L154 84 L136 72 Z" fill="#1a1a1a"/>
-        <path d="M62 30 L84 18 C89 30 111 30 116 18 L138 30 L138 205 L62 205 Z" fill="#C0181F"/>
-        <g clip-path="url(#bodyBB)">
-          <rect x="62" y="18" width="11" height="190" fill="#131313"/>
-          <rect x="84" y="18" width="11" height="190" fill="#131313"/>
-          <rect x="106" y="18" width="11" height="190" fill="#131313"/>
-          <rect x="128" y="18" width="11" height="190" fill="#131313"/>
-        </g>
-        <path d="M84 18 C89 30 111 30 116 18 L110 14 C107 22 93 22 90 14 Z" fill="#f5f5f0"/>
-        <text x="100" y="130" text-anchor="middle" font-family="Georgia, serif" font-size="44" fill="#f5f5f0" font-weight="bold">10</text>
-      </svg>
+      <div class="jersey-wrap">
+        <svg class="jersey" viewBox="0 0 200 220" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Red and black striped jersey">
+          <defs>
+            <clipPath id="bodyBB"><path d="M62 30 L84 18 C89 30 111 30 116 18 L138 30 L138 205 L62 205 Z"/></clipPath>
+          </defs>
+          <path d="M62 30 L34 48 L46 84 L64 72 Z" fill="#1a1a1a"/>
+          <path d="M138 30 L166 48 L154 84 L136 72 Z" fill="#1a1a1a"/>
+          <path d="M62 30 L84 18 C89 30 111 30 116 18 L138 30 L138 205 L62 205 Z" fill="#C0181F"/>
+          <g clip-path="url(#bodyBB)">
+            <rect x="62" y="18" width="11" height="190" fill="#131313"/>
+            <rect x="84" y="18" width="11" height="190" fill="#131313"/>
+            <rect x="106" y="18" width="11" height="190" fill="#131313"/>
+            <rect x="128" y="18" width="11" height="190" fill="#131313"/>
+          </g>
+          <path d="M84 18 C89 30 111 30 116 18 L110 14 C107 22 93 22 90 14 Z" fill="#f5f5f0"/>
+          <text x="100" y="130" text-anchor="middle" font-family="Georgia, serif" font-size="44" fill="#f5f5f0" font-weight="bold">10</text>
+        </svg>
 
-      <div class="callout callout-1">
-        <span class="plus-glyph">+</span>
-        <span class="connector"></span>
-        <span class="callout-label mono">pulled thread, left cuff</span>
+        <span class="mark mark-1" aria-hidden="true">+</span>
+        <span class="mark mark-2" aria-hidden="true">+</span>
+        <span class="mark mark-3" aria-hidden="true">+</span>
+
+        <div class="callout callout-1">
+          <span class="connector"></span>
+          <span class="callout-label mono">pulled thread, left cuff</span>
+        </div>
+        <div class="callout callout-2">
+          <span class="connector"></span>
+          <span class="callout-label mono">fade, shoulders &mdash; summers of five-a-side</span>
+        </div>
+        <div class="callout callout-3">
+          <span class="connector"></span>
+          <span class="callout-label mono">sponsor intact, somehow</span>
+        </div>
       </div>
-      <div class="callout callout-2">
-        <span class="plus-glyph">+</span>
-        <span class="connector"></span>
-        <span class="callout-label mono">fade, shoulders &mdash; summers of five-a-side</span>
-      </div>
-      <div class="callout callout-3">
-        <span class="plus-glyph">+</span>
-        <span class="connector"></span>
-        <span class="callout-label mono">sponsor intact, somehow</span>
-      </div>
+
+      <ul class="mark-legend">
+        <li><span class="plus mono">+</span>pulled thread, left cuff</li>
+        <li><span class="plus mono">+</span>fade, shoulders &mdash; summers of five-a-side</li>
+        <li><span class="plus mono">+</span>sponsor intact, somehow</li>
+      </ul>
     </div>
     <div class="signature-side">
       <h3 class="display">We point at what others hide.</h3>
-      <p>Every shirt photo &mdash; on the site, on Instagram, on the hang tag &mdash; carries its marks, annotated in amber. Honesty, made recognizable at a glance.</p>
+      <p>Every shirt photo &mdash; on the site, on Instagram, on the hang tag &mdash; carries its marks, annotated in pitch green. Honesty, made recognizable at a glance.</p>
     </div>
   </div>
 </section>
@@ -713,15 +762,15 @@
   <div class="frame-row">
     <div class="frame-col">
       <div class="frame frame-1">
-        <span class="frame-label mono">01 &mdash; NIGHT</span>
+        <span class="frame-label mono">01 &mdash; GOLDEN HOUR</span>
       </div>
-      <p class="frame-caption-bar">Flash-lit, 1am, in the city. Never in a studio.</p>
+      <p class="frame-caption-bar">35mm after five-a-side. Warm light, real streets.</p>
     </div>
     <div class="frame-col">
       <div class="frame frame-2">
-        <span class="frame-label mono">02 &mdash; FLOODLIGHT</span>
+        <span class="frame-label mono">02 &mdash; NIGHT</span>
       </div>
-      <p class="frame-caption-bar">Five-a-side courts, terraces, street football. Motion allowed. Blur welcome.</p>
+      <p class="frame-caption-bar">Flash-lit, 1am, in the city. Never in a studio.</p>
     </div>
     <div class="frame-col">
       <div class="frame frame-3">
@@ -752,7 +801,7 @@
       <h3 class="display">The feed is the film, not the shop window.</h3>
       <ul class="insta-list">
         <li><span class="plus mono">+</span>STORIES FROM THE WEARERS &mdash; cinematic interviews, the hero format</li>
-        <li><span class="plus mono">+</span>THE MARKS &mdash; macro carousels, annotated in amber</li>
+        <li><span class="plus mono">+</span>THE MARKS &mdash; macro carousels, annotated in pitch green</li>
         <li><span class="plus mono">+</span>HALFTIME TALKS &mdash; manifesto &amp; football culture cards</li>
         <li><span class="plus mono">+</span>SELLING &mdash; stories &amp; highlights only. never the feed</li>
       </ul>
