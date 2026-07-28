@@ -104,6 +104,10 @@ People wear the shirts. Never flat-lays, never mannequins, never studio-white.
 
 ## 7. Instagram
 
+**Handle:** [@startyoursecondhalf](https://www.instagram.com/startyoursecondhalf/) — reads as an invitation and matches the CTA "start its second half".
+
+**Profile picture:** the halftime-clock monogram, 1080×1080 PNG (canonical: espresso outline + pitch half on Paper — `brand-assets/avatar-paper.png`; alternates on Pitch and Espresso in the same folder).
+
 **The feed is the film, not the shop window.**
 
 Content pillars:
