@@ -84,7 +84,8 @@ Warm and light on purpose: dark palettes read premium/distant; Second Half reads
 
 **Logo:** "Second Half" wordmark in Fraunces Black, "Half" in Pitch green. Monogram: **the kickoff circle** — a circle split by the halfway line, read as both a football pitch's centre circle and a clock at halftime. Left half solid pitch green (the first half, played and full), right half open outline (the second half, blank — yours to write). Must read at favicon size.
 - **Primary mark:** clean, no centre spot — all small uses (avatar, favicon, watermark).
-- **"Full pitch" variant:** adds the kickoff spot (single espresso dot with a thin paper halo, never split per half — a split dot reads as a target) — large surfaces only: packaging, hang tags, website hero.
+- **Centre spot (large surfaces only):** never a dot or ring object on the line — haloed dot reads as a pokéball, split-colour dot as a target, echo-arc as a pokéball again (all rejected). The spot exists only as **negative space**: the "kickoff notch" — a small semicircular bite carved out of the played half, with the halfway line pausing around it. At small sizes the notch drops away: small = clean. See `brand-assets/centre-spot-options.html`.
+- **Geometry rules:** the two halves share one chord — **no gap** between them (a gap splits the mark into two objects and invites the pokéball read); the outline half's *outer* edge must match the filled half's radius exactly (stroke sits inside), so the circle is perfectly round with no step.
 
 **Typography — the two voices:**
 - **The storyteller:** Fraunces (display; *italic* for story lines — they read like film subtitles / memoir).
@@ -142,5 +143,5 @@ Real vintage, found one by one.
 - Website = prototype only for now; Instagram launches brand-first (films, marks, manifesto), selling via Stories/Highlights.
 - 2026-07-29 — Bio rewritten story-first ("Every shirt has lived a first half…"). New rules: price is a consequence, never an argument (no price on first-touch surfaces); "Found, not stocked" adopted as sourcing principle (shirts scavenged one by one, never batches).
 - 2026-07-29 — "Worn"/"used"/"second-hand" banned from all brand language (demeaning to the shirts — they *have lived*). Manifesto line 1 briefly became "Better than new."
-- 2026-07-29 — Monogram halves swapped (user): left solid = first half played/full; right outline = second half blank, yours to write. Centre-circle reading made official. Kickoff-spot variant approved for large surfaces only; split-colour spot rejected (reads as a target).
+- 2026-07-29 — Monogram halves swapped (user): left solid = first half played/full; right outline = second half blank, yours to write. Centre-circle reading made official. Split-colour spot rejected (target); haloed dot and echo arc rejected (pokéball). Spot survives only as the negative-space kickoff notch on large surfaces. Halves made gapless (one shared halfway line) and outline geometry fixed so the circle is perfectly round.
 - 2026-07-29 — New voice principle: **we talk about ourselves, never about others** — no comparatives ("Better than new" reads as fake bragging), no positioning against collectors (cousins, not enemies). Manifesto rewritten as the bio's arc: "Every shirt has lived a first half. / Every mark is a memory. / The second half is yours."
