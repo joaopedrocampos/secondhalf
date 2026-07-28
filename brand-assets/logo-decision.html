@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Second Half — The logo: the pitch-line take</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,900&family=Space+Mono&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #F3EDDF; color: #2E2419; font-family: 'Space Mono', monospace; padding: 56px 24px 72px; }
+  h1 { font-family: 'Fraunces', Georgia, serif; font-weight: 600; font-size: 28px; text-align: center; margin-bottom: 8px; }
+  .sub { text-align: center; font-size: 12px; text-transform: uppercase; letter-spacing: 0.15em; color: #8C7B63; margin-bottom: 16px; }
+  .why { text-align: center; font-size: 12px; color: #8C7B63; max-width: 58ch; margin: 0 auto 48px; line-height: 1.7; }
+  .why b { color: #2E2419; }
+  .row { display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; }
+  .variant { text-align: center; background: #FAF7EF; border: 1px solid #DDD3BF; padding: 32px 36px; max-width: 360px; }
+  .variant h2 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 24px; }
+  .big { margin-bottom: 28px; }
+  .contexts { display: flex; gap: 16px; justify-content: center; align-items: center; margin-bottom: 20px; flex-wrap: wrap; }
+  .chip { width: 96px; height: 96px; display: flex; align-items: center; justify-content: center; border-radius: 50%; }
+  .chip.on-pitch { background: #35573B; }
+  .chip.on-espresso { background: #2E2419; }
+  .contexts figure, .smallrow figure { display: flex; flex-direction: column; gap: 8px; align-items: center; }
+  figcaption { font-size: 10px; color: #8C7B63; text-transform: uppercase; }
+  .smallrow { display: flex; gap: 18px; justify-content: center; align-items: flex-end; margin-bottom: 20px; }
+  .verdict { font-size: 11.5px; line-height: 1.7; color: #8C7B63; text-align: left; border-top: 1px solid #DDD3BF; padding-top: 16px; }
+  .verdict b { color: #2E2419; }
+  .lockup { display: flex; align-items: center; justify-content: center; gap: 14px; margin-bottom: 24px; }
+  .lockup .wm { font-family: 'Fraunces', Georgia, serif; font-weight: 900; font-size: 30px; }
+  .lockup .wm span { color: #35573B; }
+</style>
+</head>
+<body>
+<h1>The pitch-line take</h1>
+<div class="sub">The halfway line runs through the circle — and keeps going</div>
+<p class="why"><b>Why this kills the pokéball for good:</b> a pokéball's line never leaves the ball. A pitch's halfway line always crosses through the centre circle and continues. The overshoot turns the mark from "an object" into "field markings" — first half played, second half open, unmistakably a pitch.</p>
+<div class="row">
+
+  <div class="variant">
+    <h2>A — Pitch line</h2>
+    <div class="big">
+      <svg viewBox="0 0 120 120" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="60" cy="60" r="49" fill="none" stroke="#35573B" stroke-width="2"/>
+        <path d="M60 10 A50 50 0 0 0 60 110 Z" fill="#35573B"/>
+        <path d="M60 2 L60 118" stroke="#35573B" stroke-width="2"/>
+      </svg>
+    </div>
+    <div class="lockup">
+      <svg viewBox="0 0 120 120" width="46" height="46"><circle cx="60" cy="60" r="49" fill="none" stroke="#35573B" stroke-width="2"/><path d="M60 10 A50 50 0 0 0 60 110 Z" fill="#35573B"/><path d="M60 2 L60 118" stroke="#35573B" stroke-width="2"/></svg>
+      <div class="wm">Second <span>Half</span></div>
+    </div>
+    <div class="contexts">
+      <figure><div class="chip on-pitch"><svg viewBox="0 0 120 120" width="64" height="64"><circle cx="60" cy="60" r="49" fill="none" stroke="#F3EDDF" stroke-width="2"/><path d="M60 10 A50 50 0 0 0 60 110 Z" fill="#F3EDDF"/><path d="M60 2 L60 118" stroke="#F3EDDF" stroke-width="2"/></svg></div><figcaption>On pitch</figcaption></figure>
+      <figure><div class="chip on-espresso"><svg viewBox="0 0 120 120" width="64" height="64"><circle cx="60" cy="60" r="49" fill="none" stroke="#F3EDDF" stroke-width="2"/><path d="M60 10 A50 50 0 0 0 60 110 Z" fill="#F3EDDF"/><path d="M60 2 L60 118" stroke="#F3EDDF" stroke-width="2"/></svg></div><figcaption>On espresso</figcaption></figure>
+    </div>
+    <div class="smallrow">
+      <figure><svg viewBox="0 0 120 120" width="40" height="40"><circle cx="60" cy="60" r="49" fill="none" stroke="#35573B" stroke-width="2"/><path d="M60 10 A50 50 0 0 0 60 110 Z" fill="#35573B"/><path d="M60 2 L60 118" stroke="#35573B" stroke-width="2"/></svg><figcaption>40px</figcaption></figure>
+      <figure><svg viewBox="0 0 120 120" width="16" height="16"><circle cx="60" cy="60" r="48" fill="none" stroke="#35573B" stroke-width="4"/><path d="M60 10 A50 50 0 0 0 60 110 Z" fill="#35573B"/><path d="M60 2 L60 118" stroke="#35573B" stroke-width="4"/></svg><figcaption>16px favicon</figcaption></figure>
+    </div>
+    <p class="verdict"><b>The centre circle as seen from above</b> — halfway line crossing through. First half filled, second half open. One green, one object impossible to read as a ball.</p>
+  </div>
+
+  <div class="variant">
+    <h2>B — Pitch line + kickoff spot</h2>
+    <div class="big">
+      <svg viewBox="0 0 120 120" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="60" cy="60" r="49" fill="none" stroke="#35573B" stroke-width="2"/>
+        <path d="M60 10 A50 50 0 0 0 60 110 L60 65.5 A5.5 5.5 0 0 1 60 54.5 L60 10 Z" fill="#35573B"/>
+        <path d="M60 2 L60 54.5 M60 65.5 L60 118" stroke="#35573B" stroke-width="2"/>
+      </svg>
+    </div>
+    <div class="lockup">
+      <svg viewBox="0 0 120 120" width="46" height="46"><circle cx="60" cy="60" r="49" fill="none" stroke="#35573B" stroke-width="2"/><path d="M60 10 A50 50 0 0 0 60 110 L60 65.5 A5.5 5.5 0 0 1 60 54.5 L60 10 Z" fill="#35573B"/><path d="M60 2 L60 54.5 M60 65.5 L60 118" stroke="#35573B" stroke-width="2"/></svg>
+      <div class="wm">Second <span>Half</span></div>
+    </div>
+    <div class="contexts">
+      <figure><div class="chip on-pitch"><svg viewBox="0 0 120 120" width="64" height="64"><circle cx="60" cy="60" r="49" fill="none" stroke="#F3EDDF" stroke-width="2"/><path d="M60 10 A50 50 0 0 0 60 110 L60 65.5 A5.5 5.5 0 0 1 60 54.5 L60 10 Z" fill="#F3EDDF"/><path d="M60 2 L60 54.5 M60 65.5 L60 118" stroke="#F3EDDF" stroke-width="2"/></svg></div><figcaption>On pitch</figcaption></figure>
+      <figure><div class="chip on-espresso"><svg viewBox="0 0 120 120" width="64" height="64"><circle cx="60" cy="60" r="49" fill="none" stroke="#F3EDDF" stroke-width="2"/><path d="M60 10 A50 50 0 0 0 60 110 L60 65.5 A5.5 5.5 0 0 1 60 54.5 L60 10 Z" fill="#F3EDDF"/><path d="M60 2 L60 54.5 M60 65.5 L60 118" stroke="#F3EDDF" stroke-width="2"/></svg></div><figcaption>On espresso</figcaption></figure>
+    </div>
+    <div class="smallrow">
+      <figure><svg viewBox="0 0 120 120" width="40" height="40"><circle cx="60" cy="60" r="49" fill="none" stroke="#35573B" stroke-width="2"/><path d="M60 10 A50 50 0 0 0 60 110 L60 65.5 A5.5 5.5 0 0 1 60 54.5 L60 10 Z" fill="#35573B"/><path d="M60 2 L60 54.5 M60 65.5 L60 118" stroke="#35573B" stroke-width="2"/></svg><figcaption>40px</figcaption></figure>
+      <figure><svg viewBox="0 0 120 120" width="16" height="16"><circle cx="60" cy="60" r="48" fill="none" stroke="#35573B" stroke-width="4"/><path d="M60 10 A50 50 0 0 0 60 110 Z" fill="#35573B"/><path d="M60 2 L60 118" stroke="#35573B" stroke-width="4"/></svg><figcaption>16px favicon*</figcaption></figure>
+    </div>
+    <p class="verdict"><b>Same, plus the kickoff spot</b> carved from the played half where the line pauses. With the line running through the whole mark, the spot finally reads as a spot on a pitch — not a button on a ball. <i>*simplifies to A when tiny.</i></p>
+  </div>
+
+</div>
+<p class="sub" style="margin-top:48px; margin-bottom:0">Left half solid — played · Right half open — yours to write · One green</p>
+</body>
+</html>

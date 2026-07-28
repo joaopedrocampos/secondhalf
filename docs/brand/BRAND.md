@@ -82,10 +82,16 @@ Three lines, one arc: a past, the proof, your turn. No comparisons, no rivals �
 
 Warm and light on purpose: dark palettes read premium/distant; Second Half reads like a door that's open. (Photography may still be nocturnal — night shots pop on cream.)
 
-**Logo:** "Second Half" wordmark in Fraunces Black, "Half" in Pitch green. Monogram: **the kickoff circle** — a circle split by the halfway line, read as both a football pitch's centre circle and a clock at halftime. Left half solid pitch green (the first half, played and full), right half open outline (the second half, blank — yours to write). Must read at favicon size.
-- **Primary mark:** clean, no centre spot — all small uses (avatar, favicon, watermark).
-- **Centre spot (large surfaces only):** never a dot or ring object on the line — haloed dot reads as a pokéball, split-colour dot as a target, echo-arc as a pokéball again (all rejected). The spot exists only as **negative space**: the "kickoff notch" — a small semicircular bite carved out of the played half, with the halfway line pausing around it. At small sizes the notch drops away: small = clean. See `brand-assets/centre-spot-options.html`.
-- **Geometry rules:** the two halves share one chord — **no gap** between them (a gap splits the mark into two objects and invites the pokéball read); the outline half's *outer* edge must match the filled half's radius exactly (stroke sits inside), so the circle is perfectly round with no step.
+**Logo (final, decided 2026-07-29):** "Second Half" wordmark in Fraunces Black, "Half" in Pitch green. Monogram: **the kickoff circle** — the centre circle of a pitch seen from above. Canonical files: `brand-assets/logo-mark.svg` (+ `-inverse`, `-small`).
+
+The mark, element by element (all in ONE colour — pitch green on light grounds, paper on dark; never two colours):
+1. **The circle** — full outline, so it always reads as one whole circle.
+2. **The halfway line** — runs through the circle and **extends beyond it** on both ends. This overshoot is what makes it read as pitch markings, never as a ball (a pokéball's line never leaves the ball). Non-negotiable.
+3. **The played half** — left half solid (the first half, fulfilled).
+4. **The open half** — right half empty (the second half, yours to write).
+5. **The kickoff spot** — carved as negative space out of the played half where the line pauses. Never a dot, ring, or halo object (all read as pokéball/target — rejected).
+- **Small sizes (≲24px: favicon, watermark):** the spot drops away automatically — use `logo-mark-small.svg` (same mark, no spot, heavier stroke).
+- **Geometry rules:** halves share one chord (no gap); the outline's *outer* edge matches the filled half's radius exactly, so the circle is perfectly round with no step.
 
 **Typography — the two voices:**
 - **The storyteller:** Fraunces (display; *italic* for story lines — they read like film subtitles / memoir).
@@ -143,5 +149,6 @@ Real vintage, found one by one.
 - Website = prototype only for now; Instagram launches brand-first (films, marks, manifesto), selling via Stories/Highlights.
 - 2026-07-29 — Bio rewritten story-first ("Every shirt has lived a first half…"). New rules: price is a consequence, never an argument (no price on first-touch surfaces); "Found, not stocked" adopted as sourcing principle (shirts scavenged one by one, never batches).
 - 2026-07-29 — "Worn"/"used"/"second-hand" banned from all brand language (demeaning to the shirts — they *have lived*). Manifesto line 1 briefly became "Better than new."
-- 2026-07-29 — Monogram halves swapped (user): left solid = first half played/full; right outline = second half blank, yours to write. Centre-circle reading made official. Split-colour spot rejected (target); haloed dot and echo arc rejected (pokéball). Spot survives only as the negative-space kickoff notch on large surfaces. Halves made gapless (one shared halfway line) and outline geometry fixed so the circle is perfectly round.
+- 2026-07-29 — Monogram halves swapped (user): left solid = first half played/full; right outline = second half blank, yours to write. Centre-circle reading made official. Split-colour spot rejected (target); haloed dot, echo arc, and full-bordered spot rejected (pokéball). Halves made gapless; outline geometry fixed so the circle is perfectly round.
+- 2026-07-29 — **Final logo decided: the kickoff circle, pitch-line take.** Monochrome (one colour), full circle, halfway line extending beyond the circle (the anti-pokéball move: a ball's line never leaves the ball; a pitch's line keeps going), solid played half, open second half, kickoff spot as negative space. Simplifies to spotless variant at tiny sizes. Canonical SVGs in brand-assets/.
 - 2026-07-29 — New voice principle: **we talk about ourselves, never about others** — no comparatives ("Better than new" reads as fake bragging), no positioning against collectors (cousins, not enemies). Manifesto rewritten as the bio's arc: "Every shirt has lived a first half. / Every mark is a memory. / The second half is yours."
