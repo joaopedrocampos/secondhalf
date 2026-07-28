@@ -8,7 +8,7 @@
 
 Somebody wore this shirt to the match of their life. To the night they'll never forget. That's where the marks came from — and that's why they matter.
 
-**Second Half doesn't sell jerseys — it sells stories that start their second chapter with you.** Real vintage football shirts, really worn. Not mint pieces for glass cases. Not factory fakes with no past. Shirts with a first half behind them — looking for someone to write the second.
+**Second Half doesn't sell jerseys — it sells stories that start their second chapter with you.** Real vintage football shirts that have already lived. Not mint pieces for glass cases. Not factory fakes with no past. Shirts with a first half behind them — looking for someone to write the second.
 
 **Found, not stocked.** Every shirt is scavenged one by one from individual sellers — never bought in batches. Uniqueness isn't a marketing claim; it's how the shop works. (Pricing target ~€100 is internal positioning — see voice rules: price is a consequence, never an argument.)
 
@@ -19,7 +19,7 @@ Somebody wore this shirt to the match of their life. To the night they'll never 
 | | |
 |---|---|
 | **For** | People (roughly 18–35) who love football culture and style — blokecore natives, casual collectors — who want a real shirt, not a €400 grail and not a fake |
-| **We are** | The place where worn shirts find their next story |
+| **We are** | The place where shirts with a past find their next story |
 | **Unlike** | Archive resellers (museum energy, premium prices) and replica/fake sellers (no past, no truth) |
 | **Because** | Every mark is a memory, and honesty about them is our signature |
 
@@ -31,7 +31,7 @@ Somebody wore this shirt to the match of their life. To the night they'll never 
 
 ## 3. Manifesto
 
-1. **Worn, not worn out.**
+1. **Better than new.**
 2. **Every mark is a memory.**
 3. **No glass cases. Ever.**
 
@@ -51,6 +51,7 @@ Somebody wore this shirt to the match of their life. To the night they'll never 
 | Wearers (customers, community) | "buyers", "collectors" |
 | Drop (a new small collection) | "new arrivals" |
 | Found, not stocked (sourcing) | "curated selection", "in stock" |
+| A shirt that has lived / has a past | "worn", "used", "second-hand" |
 | Stories from the Wearers (the films) | "testimonials", "reviews" |
 
 **Voice rules:**
@@ -59,7 +60,8 @@ Somebody wore this shirt to the match of their life. To the night they'll never 
 - Stories may be known or imagined — imagined ones are written so it's clear ("The fade says summers of five-a-side. The rest is yours to write."). Never fabricate provenance as fact.
 - Football-native, never gatekeeping. No "premium", no "authentic vintage!!", no "rare investment piece", no SALE shouting.
 - **Price is a consequence, never an argument.** It never appears on first-touch surfaces (bio, hero, packaging, ads) — only on the listing itself. People should fall for the shirt and the story, then be pleasantly surprised it isn't €250.
-- **The storyteller opens; the archivist follows.** First-touch surfaces never lead with "worn" or condition — leading with "worn" reads as "bad condition". The story comes first; the honest marks come once attention is earned. ("Worn, not worn out." stays a manifesto line — it's a rebuttal, not a greeting.)
+- **The storyteller opens; the archivist follows.** The story comes first, always; the honest marks come once attention is earned. Condition is never the headline.
+- **The shirts are never "worn", "used" or "second-hand" — anywhere.** Those labels demean them. The shirts *have lived*, *have a past*, *have a first half behind them*, *carry stories*. The marks stay honest (that's the archivist's job), but the vocabulary around the shirt is always about life, never about wear. (The *verb* is fine when a person is doing it — "I've worn it to every derby" is a wearer celebrating. The banned thing is the label on the shirt.)
 
 ## 5. Visual identity — Palette A "Sunday League"
 
@@ -116,7 +118,7 @@ Real vintage, found one by one.
 
 ## 8. Reference brands (what we learned)
 
-- **Patagonia Worn Wear**: stories of worn gear build cult loyalty; "worn = loved" works commercially.
+- **Patagonia Worn Wear**: stories of well-lived gear build cult loyalty; "it has a past" sells. (Their name uses "worn" — ours never does; see voice rules.)
 - **MUNDIAL magazine**: football nostalgia + editorial warmth creates paying community.
 - **Blokecore trend**: the demand tailwind — Gen Z wears vintage shirts as fashion and wants the real thing.
 - **Cult Kits / Classic Football Shirts**: competitors professionalizing; their gap is intimacy — they sell football's history, we tell people's stories.
@@ -127,4 +129,5 @@ Real vintage, found one by one.
 - 2026-07-28 — Name: **Second Half** (was placeholder, confirmed by concept fit). Market: English, EUR, ~€100 price point.
 - 2026-07-29 — Palette A "Sunday League" chosen over Golden Hour (B) and Kneipe (C). Black+yellow banned (Dortmund); "brand wears no club's colours" rule adopted.
 - Website = prototype only for now; Instagram launches brand-first (films, marks, manifesto), selling via Stories/Highlights.
-- 2026-07-29 — Bio rewritten story-first ("Every shirt has lived a first half…"). New rules: price is a consequence, never an argument (no price on first-touch surfaces); never lead with "worn" on first-touch surfaces; "Found, not stocked" adopted as sourcing principle (shirts scavenged one by one, never batches).
+- 2026-07-29 — Bio rewritten story-first ("Every shirt has lived a first half…"). New rules: price is a consequence, never an argument (no price on first-touch surfaces); "Found, not stocked" adopted as sourcing principle (shirts scavenged one by one, never batches).
+- 2026-07-29 — "Worn"/"used"/"second-hand" banned from all brand language (demeaning to the shirts — they *have lived*). Manifesto line 1 changed: "Worn, not worn out." → "Better than new."
