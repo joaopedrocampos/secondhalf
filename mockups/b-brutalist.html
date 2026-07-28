@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Direction B — Brutalist / Bold</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --white: #FFFFFF;
+    --black: #0C0C0C;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--white);
+    color: var(--black);
+    font-family: 'Archivo', -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .display { font-family: 'Anton', Impact, sans-serif; }
+  .mono { font-family: 'Space Mono', Menlo, monospace; }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 28px;
+    border-bottom: 3px solid var(--black);
+    position: sticky;
+    top: 0;
+    background: var(--white);
+    z-index: 10;
+  }
+  .wordmark {
+    font-family: 'Anton', Impact, sans-serif;
+    font-size: 22px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+  }
+  header .tag {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+  }
+
+  /* Hero */
+  .hero {
+    padding: 72px 28px 56px;
+    border-bottom: 3px solid var(--black);
+  }
+  .hero h1 {
+    font-family: 'Anton', Impact, sans-serif;
+    font-size: clamp(64px, 13vw, 170px);
+    line-height: 0.92;
+    text-transform: uppercase;
+    letter-spacing: 0.005em;
+  }
+  .hero h1 .outline {
+    color: var(--white);
+    -webkit-text-stroke: 2.5px var(--black);
+    text-stroke: 2.5px var(--black);
+  }
+  .hero-foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 40px;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .hero-foot p {
+    font-family: 'Space Mono', monospace;
+    font-size: 13px;
+    max-width: 42ch;
+    line-height: 1.55;
+  }
+  .hero-foot .count {
+    font-family: 'Anton', Impact, sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    border: 3px solid var(--black);
+    padding: 10px 18px;
+    white-space: nowrap;
+  }
+
+  /* Fixture-list rows: each row wears the shirt's kit colors */
+  .row {
+    display: grid;
+    grid-template-columns: 90px 1fr auto auto;
+    align-items: center;
+    gap: 28px;
+    padding: 26px 28px;
+    border-bottom: 3px solid var(--black);
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    transition: padding 0.2s;
+  }
+  .row:hover { padding-left: 44px; }
+  .row .num {
+    font-family: 'Anton', Impact, sans-serif;
+    font-size: 64px;
+    line-height: 1;
+  }
+  .row .info h2 {
+    font-family: 'Anton', Impact, sans-serif;
+    font-size: clamp(26px, 4.5vw, 46px);
+    text-transform: uppercase;
+    line-height: 1;
+  }
+  .row .info .meta {
+    font-family: 'Space Mono', monospace;
+    font-size: 12px;
+    margin-top: 8px;
+    text-transform: uppercase;
+  }
+  .row .price {
+    font-family: 'Anton', Impact, sans-serif;
+    font-size: 30px;
+  }
+  .row .cta {
+    font-family: 'Space Mono', monospace;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 3px solid currentColor;
+    padding: 12px 20px;
+    white-space: nowrap;
+  }
+
+  /* Kit colorways */
+  .row.milan { background: #C0181F; color: #fff; }
+  .row.milan .num { color: #0C0C0C; }
+  .row.dortmund { background: #FFCC00; color: #0C0C0C; }
+  .row.fiorentina { background: #3D2260; color: #fff; }
+  .row.fiorentina .num { color: #C81E3A; }
+  .row.brazil { background: #F5C518; color: #14713F; }
+
+  .sold-strip {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 28px;
+    border-bottom: 3px solid var(--black);
+    font-family: 'Space Mono', monospace;
+    font-size: 12px;
+    text-transform: uppercase;
+    background: var(--black);
+    color: var(--white);
+  }
+
+  footer {
+    padding: 56px 28px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+    font-family: 'Space Mono', monospace;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 760px) {
+    .row { grid-template-columns: 56px 1fr; gap: 16px; }
+    .row .num { font-size: 40px; }
+    .row .price { grid-column: 2; justify-self: start; }
+    .row .cta { display: none; }
+    .row:hover { padding-left: 28px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wordmark">Second Half</div>
+  <div class="tag">1-of-1 vintage shirts · EU shipping</div>
+</header>
+
+<section class="hero">
+  <h1>Worn.<br>Washed.<br><span class="outline">Once more.</span></h1>
+  <div class="hero-foot">
+    <p>Original football shirts from the 90s — no reprints, no remakes. When it's gone, it's gone. New drop every month.</p>
+    <div class="count">Drop 01 — 9 shirts</div>
+  </div>
+</section>
+
+<a class="row milan" href="#">
+  <div class="num">10</div>
+  <div class="info">
+    <h2>Milan Home 94–95</h2>
+    <div class="meta">Lotto · Size L · Excellent</div>
+  </div>
+  <div class="price">€240</div>
+  <div class="cta">View shirt</div>
+</a>
+
+<a class="row dortmund" href="#">
+  <div class="num">9</div>
+  <div class="info">
+    <h2>Dortmund Home 96–97</h2>
+    <div class="meta">Nike · Size XL · Very good</div>
+  </div>
+  <div class="price">€185</div>
+  <div class="cta">View shirt</div>
+</a>
+
+<a class="row fiorentina" href="#">
+  <div class="num">21</div>
+  <div class="info">
+    <h2>Fiorentina Home 98–99</h2>
+    <div class="meta">Fila · Size M · Good</div>
+  </div>
+  <div class="price">€210</div>
+  <div class="cta">View shirt</div>
+</a>
+
+<a class="row brazil" href="#">
+  <div class="num">11</div>
+  <div class="info">
+    <h2>Brazil Home 1998</h2>
+    <div class="meta">Nike · Size M · Excellent</div>
+  </div>
+  <div class="price">€260</div>
+  <div class="cta">View shirt</div>
+</a>
+
+<div class="sold-strip">
+  <span>Recently gone: Ajax 95 · Newcastle 96 · Parma 99</span>
+  <span>Sold means sold</span>
+</div>
+
+<footer>
+  <span>Second Half — Munich</span>
+  <span>Instagram · Contact · Shipping</span>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Second Half — Brand Book Vol. 1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,400;1,9..144,600&family=Archivo:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --night: #131110;
+    --surface: #1C1916;
+    --paper: #F2EDE3;
+    --amber: #E5A33C;
+    --muted: #918878;
+    --line: #2E2A24;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { -webkit-font-smoothing: antialiased; }
+
+  body {
+    background: var(--night);
+    color: var(--paper);
+    font-family: 'Archivo', -apple-system, sans-serif;
+    line-height: 1.6;
+  }
+
+  img, svg { display: block; max-width: 100%; }
+  a { color: inherit; text-decoration: none; }
+
+  .display { font-family: 'Fraunces', Georgia, serif; }
+  .mono { font-family: 'Space Mono', 'Courier New', monospace; }
+
+  a:focus-visible,
+  button:focus-visible {
+    outline: 2px solid var(--amber);
+    outline-offset: 3px;
+  }
+
+  section {
+    border-bottom: 1px solid var(--line);
+    padding: 100px 64px;
+    position: relative;
+  }
+
+  .section-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--amber);
+    margin-bottom: 40px;
+    display: block;
+  }
+
+  .eyebrow-mono {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  /* ========== progressive enhancement guard (optional anim) ========== */
+  @media (prefers-reduced-motion: reduce) {
+    * { animation: none !important; transition: none !important; }
+  }
+
+  /* ========== monogram ========== */
+  .monogram-wrap { display: inline-flex; flex-direction: column; align-items: center; gap: 10px; }
+  .monogram-lockup-time { font-size: 11px; color: var(--muted); }
+
+  /* ========== SECTION 0 — COVER ========== */
+  .cover {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 28px;
+    padding: 80px 24px 48px;
+  }
+  .cover .monogram-wrap svg { width: 120px; height: 120px; }
+  .cover-wordmark {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: clamp(40px, 9vw, 64px);
+    letter-spacing: -0.01em;
+  }
+  .cover-wordmark span { color: var(--amber); }
+  .cover-tagline {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: clamp(18px, 3vw, 24px);
+    color: var(--muted);
+  }
+  .cover-footnote {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+    font-size: 12px;
+    color: var(--muted);
+  }
+
+  /* ========== SECTION 01 — THE IDEA ========== */
+  .idea-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 64px;
+  }
+  .idea-headline {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: clamp(28px, 4vw, 40px);
+    line-height: 1.2;
+    max-width: 14ch;
+  }
+  .idea-copy {
+    font-size: 17px;
+    color: var(--muted);
+    max-width: 56ch;
+  }
+  .manifesto-strip {
+    margin-top: 72px;
+    border-top: 1px solid var(--line);
+    padding-top: 48px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+  .manifesto-item .index {
+    font-family: 'Space Mono', monospace;
+    font-size: 12px;
+    color: var(--amber);
+    margin-bottom: 14px;
+    display: block;
+  }
+  .manifesto-item p {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.3;
+  }
+
+  /* ========== SECTION 02 — THE LOGO ========== */
+  .logo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+  }
+  .logo-tile {
+    background: var(--night);
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 32px;
+    text-align: center;
+  }
+  .logo-tile.on-night { background: var(--night); }
+  .logo-tile.on-amber { background: var(--amber); }
+  .tile-content { display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap; }
+  .tile-caption {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .logo-tile.on-amber .tile-caption { color: var(--night); opacity: 0.7; }
+  .lockup-wordmark {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 30px;
+    letter-spacing: -0.01em;
+  }
+  .lockup-wordmark span { color: var(--amber); }
+  .lockup-wordmark.on-night-text { color: var(--night); }
+  .lockup-wordmark.on-night-text span { color: var(--night); }
+  .logo-tile svg { width: 64px; height: 64px; }
+
+  /* ========== SECTION 03 — COLOUR ========== */
+  .swatch-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-bottom: 56px;
+  }
+  .swatch-card { flex: 1 1 180px; min-width: 160px; }
+  .swatch-block {
+    height: 200px;
+    border: 1px solid var(--line);
+    margin-bottom: 16px;
+  }
+  .swatch-meta {
+    font-family: 'Space Mono', monospace;
+    font-size: 12px;
+    line-height: 1.7;
+    color: var(--muted);
+  }
+  .swatch-meta strong { color: var(--paper); display: block; font-size: 13px; }
+  .colour-note {
+    color: var(--muted);
+    font-size: 16px;
+    max-width: 62ch;
+  }
+
+  /* ========== SECTION 04 — TWO VOICES ========== */
+  .voices-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+    margin-bottom: 40px;
+  }
+  .voice-panel {
+    background: var(--surface);
+    padding: 56px 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    justify-content: center;
+    min-height: 280px;
+  }
+  .voice-panel .section-label { margin-bottom: 0; }
+  .storyteller-line {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: clamp(20px, 2.4vw, 30px);
+    color: var(--paper);
+    line-height: 1.4;
+  }
+  .archivist-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .archivist-list li {
+    font-family: 'Space Mono', monospace;
+    font-size: 13px;
+    color: var(--paper);
+  }
+  .archivist-list .plus { color: var(--amber); margin-right: 8px; }
+  .voices-note { color: var(--muted); font-size: 16px; max-width: 62ch; margin-bottom: 12px; }
+  .voices-subnote { font-family: 'Space Mono', monospace; font-size: 12px; color: var(--muted); }
+
+  /* ========== SECTION 05 — THE SIGNATURE ========== */
+  .signature-layout {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 56px;
+    align-items: center;
+  }
+  .signature-stage {
+    position: relative;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .signature-stage svg.jersey { width: 320px; height: auto; }
+  .callout {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Space Mono', monospace;
+    font-size: 11.5px;
+    color: var(--paper);
+  }
+  .callout .plus-glyph {
+    color: var(--amber);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1;
+  }
+  .callout .callout-label {
+    background: var(--night);
+    padding: 6px 10px;
+    white-space: nowrap;
+    border: 1px solid var(--line);
+  }
+  .callout .connector {
+    height: 1px;
+    background: var(--amber);
+    display: inline-block;
+  }
+  .callout-1 { top: 14%; left: 6%; }
+  .callout-1 .connector { width: 44px; }
+  .callout-2 { top: 8%; right: 4%; flex-direction: row-reverse; }
+  .callout-2 .connector { width: 34px; }
+  .callout-3 { bottom: 12%; right: 6%; flex-direction: row-reverse; }
+  .callout-3 .connector { width: 38px; }
+
+  .signature-side h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: clamp(22px, 3vw, 28px);
+    margin-bottom: 20px;
+    line-height: 1.3;
+  }
+  .signature-side p { color: var(--muted); font-size: 16px; }
+
+  /* ========== SECTION 06 — PHOTOGRAPHY ========== */
+  .frame-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 40px;
+  }
+  .frame {
+    aspect-ratio: 16 / 9;
+    position: relative;
+    border: 1px solid var(--line);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .frame-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 13px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--paper);
+    z-index: 2;
+    text-shadow: 0 2px 12px rgba(0,0,0,0.6);
+  }
+  .frame-1 {
+    background:
+      repeating-radial-gradient(circle at 30% 130%, rgba(0,0,0,0.12) 0px, rgba(0,0,0,0.12) 1px, transparent 1px, transparent 3px),
+      radial-gradient(circle at 12% 8%, rgba(229,163,60,0.35) 0%, rgba(229,163,60,0.12) 20%, transparent 55%),
+      radial-gradient(ellipse at center, #1a1613 20%, #0a0908 100%);
+  }
+  .frame-2 {
+    background:
+      repeating-linear-gradient(0deg, rgba(0,0,0,0.08) 0px, rgba(0,0,0,0.08) 1px, transparent 1px, transparent 4px),
+      radial-gradient(circle at 50% 100%, rgba(229,163,60,0.28) 0%, rgba(229,163,60,0.08) 25%, transparent 60%),
+      linear-gradient(180deg, #16261a 0%, #1a2e1f 55%, #0d1610 100%);
+  }
+  .frame-3 {
+    background:
+      repeating-radial-gradient(circle at 60% 40%, rgba(0,0,0,0.18) 0px, rgba(0,0,0,0.18) 1px, transparent 1px, transparent 2.5px),
+      radial-gradient(circle at 65% 45%, rgba(229,163,60,0.4) 0%, rgba(229,163,60,0.15) 30%, transparent 62%),
+      radial-gradient(ellipse at center, #211a14 15%, #0b0908 100%);
+  }
+  .frame::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    box-shadow: inset 0 0 90px 30px rgba(0,0,0,0.65);
+    z-index: 1;
+  }
+  .frame-caption-bar {
+    margin-top: 16px;
+    font-family: 'Space Mono', monospace;
+    font-size: 12px;
+    color: var(--muted);
+  }
+  .frame-col { display: flex; flex-direction: column; }
+  .photo-note { color: var(--muted); font-size: 16px; max-width: 62ch; }
+
+  /* ========== SECTION 07 — INSTAGRAM ========== */
+  .insta-grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: start;
+  }
+  .insta-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    background: var(--line);
+  }
+  .insta-tile {
+    aspect-ratio: 1 / 1;
+    background: var(--surface);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+  }
+  .insta-tile.film {
+    background: radial-gradient(circle at 50% 40%, rgba(229,163,60,0.18) 0%, transparent 55%), #15120f;
+  }
+  .insta-tile .mini-play {
+    width: 28px;
+    height: 28px;
+    border: 1px solid var(--amber);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .insta-tile .mini-play::after {
+    content: "";
+    width: 0; height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 8px solid var(--amber);
+    margin-left: 2px;
+  }
+  .insta-tile.marks { background: var(--surface); }
+  .insta-tile.marks span {
+    font-family: 'Space Mono', monospace;
+    font-size: 9.5px;
+    color: var(--amber);
+    line-height: 1.4;
+  }
+  .insta-tile.text-amber { background: var(--amber); color: var(--night); }
+  .insta-tile.text-amber span { font-family: 'Fraunces', serif; font-weight: 600; font-size: 14px; line-height: 1.25; }
+  .insta-tile.text-night { background: var(--night); }
+  .insta-tile.text-night span { font-family: 'Fraunces', serif; font-style: italic; font-size: 13px; color: var(--paper); line-height: 1.3; }
+  .insta-tile.text-surface { background: var(--surface); }
+  .insta-tile.text-surface span { font-family: 'Fraunces', serif; font-style: italic; font-size: 13px; color: var(--muted); line-height: 1.3; }
+
+  .insta-side h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: clamp(22px, 3vw, 28px);
+    margin: 20px 0 28px;
+    line-height: 1.3;
+  }
+  .insta-list { list-style: none; display: flex; flex-direction: column; gap: 14px; margin-bottom: 36px; }
+  .insta-list li { font-family: 'Space Mono', monospace; font-size: 13px; color: var(--paper); line-height: 1.6; }
+  .insta-list .plus { color: var(--amber); margin-right: 8px; }
+  .bio-box {
+    border: 1px solid var(--line);
+    padding: 20px 24px;
+    font-family: 'Space Mono', monospace;
+    font-size: 12px;
+    color: var(--muted);
+    line-height: 1.7;
+  }
+
+  /* ========== SECTION 08 — VOICE ========== */
+  .voice-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+  }
+  .voice-col-header {
+    font-family: 'Space Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--amber);
+    margin-bottom: 28px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--line);
+  }
+  .voice-col.never .voice-col-header { color: var(--muted); }
+  .voice-row {
+    font-family: 'Fraunces', serif;
+    font-size: 19px;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .voice-col.never .voice-row {
+    color: var(--muted);
+    text-decoration: line-through;
+    text-decoration-color: rgba(145,136,120,0.5);
+  }
+
+  /* ========== FOOTER ========== */
+  footer {
+    padding: 40px 64px;
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    color: var(--muted);
+  }
+
+  /* ========== RESPONSIVE ========== */
+  @media (max-width: 1000px) {
+    section { padding: 72px 40px; }
+    .idea-grid { grid-template-columns: 1fr; gap: 40px; }
+    .manifesto-strip { grid-template-columns: 1fr; gap: 28px; }
+    .logo-grid { grid-template-columns: 1fr; }
+    .voices-grid { grid-template-columns: 1fr; }
+    .signature-layout { grid-template-columns: 1fr; }
+    .signature-stage { min-height: 380px; }
+    .frame-row { grid-template-columns: 1fr; }
+    .insta-grid-layout { grid-template-columns: 1fr; }
+    .voice-columns { grid-template-columns: 1fr; gap: 8px; }
+  }
+
+  @media (max-width: 700px) {
+    section { padding: 56px 20px; }
+    .cover { padding: 64px 16px 40px; }
+    .voice-panel { padding: 40px 28px; }
+    .callout .callout-label { font-size: 10px; padding: 5px 8px; }
+    .callout-1 { left: 2%; }
+    .callout-2 { right: 2%; }
+    .callout-3 { right: 2%; }
+  }
+
+  @media (max-width: 375px) {
+    section { padding: 48px 16px; }
+    .idea-headline { font-size: 26px; }
+    .signature-stage svg.jersey { width: 220px; }
+    .callout { font-size: 10px; }
+    .callout .connector { width: 20px !important; }
+  }
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add('js');</script>
+
+<!-- ============ SECTION 0 — COVER ============ -->
+<section class="cover">
+  <div class="monogram-wrap">
+    <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Second Half halftime clock monogram">
+      <path d="M60 6 A54 54 0 0 0 60 114 Z" fill="none" stroke="#F2EDE3" stroke-width="2"/>
+      <path d="M62 6 A54 54 0 0 1 62 114 Z" fill="#E5A33C"/>
+    </svg>
+  </div>
+  <div class="cover-wordmark display">Second <span>Half</span></div>
+  <p class="cover-tagline display">The second half is yours.</p>
+  <div class="cover-footnote mono">Brand book — Vol. 1 · 2026</div>
+</section>
+
+<!-- ============ SECTION 01 — THE IDEA ============ -->
+<section id="idea">
+  <span class="section-label mono">01 — The idea</span>
+  <div class="idea-grid">
+    <div>
+      <p class="idea-headline display">Every shirt has already lived a first half.</p>
+    </div>
+    <div>
+      <p class="idea-copy">Somebody wore this shirt to the match of their life. To the night they'll never forget. That's where the marks came from &mdash; and that's why they matter. Second Half sells real vintage football shirts, really worn, honestly priced around &euro;100. Not mint pieces for glass cases. Not factory fakes with no past. Shirts with a first half behind them &mdash; looking for someone to write the second.</p>
+    </div>
+  </div>
+  <div class="manifesto-strip">
+    <div class="manifesto-item">
+      <span class="index mono">I</span>
+      <p class="display">Worn, not worn out.</p>
+    </div>
+    <div class="manifesto-item">
+      <span class="index mono">II</span>
+      <p class="display">Every mark is a memory.</p>
+    </div>
+    <div class="manifesto-item">
+      <span class="index mono">III</span>
+      <p class="display">No glass cases. Ever.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SECTION 02 — THE LOGO ============ -->
+<section id="logo">
+  <span class="section-label mono">02 — The logo</span>
+  <div class="logo-grid">
+    <div class="logo-tile on-night">
+      <div class="tile-content">
+        <svg viewBox="0 0 120 120" width="56" height="56" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Halftime clock monogram">
+          <path d="M60 6 A54 54 0 0 0 60 114 Z" fill="none" stroke="#F2EDE3" stroke-width="2"/>
+          <path d="M62 6 A54 54 0 0 1 62 114 Z" fill="#E5A33C"/>
+        </svg>
+        <div class="lockup-wordmark display">Second <span>Half</span></div>
+      </div>
+      <span class="tile-caption mono">Primary lockup</span>
+    </div>
+
+    <div class="logo-tile on-night">
+      <div class="tile-content">
+        <div class="lockup-wordmark display">Second <span>Half</span></div>
+      </div>
+      <span class="tile-caption mono">Wordmark</span>
+    </div>
+
+    <div class="logo-tile on-night">
+      <div class="tile-content">
+        <svg viewBox="0 0 120 120" width="72" height="72" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Halftime clock monogram">
+          <path d="M60 6 A54 54 0 0 0 60 114 Z" fill="none" stroke="#F2EDE3" stroke-width="2"/>
+          <path d="M62 6 A54 54 0 0 1 62 114 Z" fill="#E5A33C"/>
+        </svg>
+      </div>
+      <span class="tile-caption mono">The halftime mark &mdash; avatar &amp; favicon</span>
+    </div>
+
+    <div class="logo-tile on-amber">
+      <div class="tile-content">
+        <svg viewBox="0 0 120 120" width="56" height="56" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Halftime clock monogram, inverted">
+          <path d="M60 6 A54 54 0 0 0 60 114 Z" fill="none" stroke="#131110" stroke-width="2"/>
+          <path d="M62 6 A54 54 0 0 1 62 114 Z" fill="#131110"/>
+        </svg>
+        <div class="lockup-wordmark display on-night-text">Second Half</div>
+      </div>
+      <span class="tile-caption mono">On floodlight amber</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SECTION 03 — COLOUR ============ -->
+<section id="colour">
+  <span class="section-label mono">03 — Colour</span>
+  <div class="swatch-row">
+    <div class="swatch-card">
+      <div class="swatch-block" style="background:#131110;"></div>
+      <div class="swatch-meta mono"><strong>Night #131110</strong>the ground</div>
+    </div>
+    <div class="swatch-card">
+      <div class="swatch-block" style="background:#E5A33C;"></div>
+      <div class="swatch-meta mono"><strong>Floodlight #E5A33C</strong>the recognition colour</div>
+    </div>
+    <div class="swatch-card">
+      <div class="swatch-block" style="background:#F2EDE3;"></div>
+      <div class="swatch-meta mono"><strong>Paper #F2EDE3</strong>the words</div>
+    </div>
+    <div class="swatch-card">
+      <div class="swatch-block" style="background:#918878;"></div>
+      <div class="swatch-meta mono"><strong>Muted #918878</strong>the whisper</div>
+    </div>
+    <div class="swatch-card">
+      <div class="swatch-block" style="background:#1C1916;"></div>
+      <div class="swatch-meta mono"><strong>Surface #1C1916</strong>the cards</div>
+    </div>
+  </div>
+  <p class="colour-note">One colour does the remembering: floodlight amber. It appears in every photo, every post, every package &mdash; never as decoration, always pointing at something that matters.</p>
+</section>
+
+<!-- ============ SECTION 04 — THE TWO VOICES ============ -->
+<section id="voices">
+  <span class="section-label mono">04 — The two voices</span>
+  <div class="voices-grid">
+    <div class="voice-panel">
+      <span class="section-label mono">The storyteller &mdash; Fraunces italic</span>
+      <p class="storyteller-line display">Purple doesn't survive three decades unless somebody refused to stop wearing it.</p>
+    </div>
+    <div class="voice-panel">
+      <span class="section-label mono">The archivist &mdash; Space Mono</span>
+      <ul class="archivist-list">
+        <li><span class="plus mono">+</span>Pulled thread, left cuff</li>
+        <li><span class="plus mono">+</span>Colours softened by 30 years of sun</li>
+        <li><span class="plus mono">+</span>Original sponsor, intact</li>
+      </ul>
+    </div>
+  </div>
+  <p class="voices-note">Every Second Half surface speaks twice: the storyteller falls in love, the archivist tells the truth. Never one without the other.</p>
+  <p class="voices-subnote mono">Utility text: Archivo &mdash; quiet, invisible, everywhere else.</p>
+</section>
+
+<!-- ============ SECTION 05 — THE SIGNATURE ============ -->
+<section id="signature">
+  <span class="section-label mono">05 — The signature: mark annotations</span>
+  <div class="signature-layout">
+    <div class="signature-stage">
+      <svg class="jersey" viewBox="0 0 200 220" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Red and black striped jersey">
+        <defs>
+          <clipPath id="bodyBB"><path d="M62 30 L84 18 C89 30 111 30 116 18 L138 30 L138 205 L62 205 Z"/></clipPath>
+        </defs>
+        <path d="M62 30 L34 48 L46 84 L64 72 Z" fill="#1a1a1a"/>
+        <path d="M138 30 L166 48 L154 84 L136 72 Z" fill="#1a1a1a"/>
+        <path d="M62 30 L84 18 C89 30 111 30 116 18 L138 30 L138 205 L62 205 Z" fill="#C0181F"/>
+        <g clip-path="url(#bodyBB)">
+          <rect x="62" y="18" width="11" height="190" fill="#131313"/>
+          <rect x="84" y="18" width="11" height="190" fill="#131313"/>
+          <rect x="106" y="18" width="11" height="190" fill="#131313"/>
+          <rect x="128" y="18" width="11" height="190" fill="#131313"/>
+        </g>
+        <path d="M84 18 C89 30 111 30 116 18 L110 14 C107 22 93 22 90 14 Z" fill="#f5f5f0"/>
+        <text x="100" y="130" text-anchor="middle" font-family="Georgia, serif" font-size="44" fill="#f5f5f0" font-weight="bold">10</text>
+      </svg>
+
+      <div class="callout callout-1">
+        <span class="plus-glyph">+</span>
+        <span class="connector"></span>
+        <span class="callout-label mono">pulled thread, left cuff</span>
+      </div>
+      <div class="callout callout-2">
+        <span class="plus-glyph">+</span>
+        <span class="connector"></span>
+        <span class="callout-label mono">fade, shoulders &mdash; summers of five-a-side</span>
+      </div>
+      <div class="callout callout-3">
+        <span class="plus-glyph">+</span>
+        <span class="connector"></span>
+        <span class="callout-label mono">sponsor intact, somehow</span>
+      </div>
+    </div>
+    <div class="signature-side">
+      <h3 class="display">We point at what others hide.</h3>
+      <p>Every shirt photo &mdash; on the site, on Instagram, on the hang tag &mdash; carries its marks, annotated in amber. Honesty, made recognizable at a glance.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SECTION 06 — PHOTOGRAPHY DIRECTION ============ -->
+<section id="photography">
+  <span class="section-label mono">06 — Photography direction</span>
+  <div class="frame-row">
+    <div class="frame-col">
+      <div class="frame frame-1">
+        <span class="frame-label mono">01 &mdash; NIGHT</span>
+      </div>
+      <p class="frame-caption-bar">Flash-lit, 1am, in the city. Never in a studio.</p>
+    </div>
+    <div class="frame-col">
+      <div class="frame frame-2">
+        <span class="frame-label mono">02 &mdash; FLOODLIGHT</span>
+      </div>
+      <p class="frame-caption-bar">Five-a-side courts, terraces, street football. Motion allowed. Blur welcome.</p>
+    </div>
+    <div class="frame-col">
+      <div class="frame frame-3">
+        <span class="frame-label mono">03 &mdash; CLOSE</span>
+      </div>
+      <p class="frame-caption-bar">Macro on the marks. The fabric is the landscape.</p>
+    </div>
+  </div>
+  <p class="photo-note">People wear the shirts. Shirts are never laid flat, never on mannequins, never on white.</p>
+</section>
+
+<!-- ============ SECTION 07 — INSTAGRAM ============ -->
+<section id="instagram">
+  <div class="insta-grid-layout">
+    <div class="insta-grid">
+      <div class="insta-tile film"><span class="mini-play"></span></div>
+      <div class="insta-tile marks"><span class="mono">+ pulled thread, left cuff</span></div>
+      <div class="insta-tile text-amber"><span class="display">Worn, not worn out.</span></div>
+      <div class="insta-tile marks"><span class="mono">+ number ghost, back</span></div>
+      <div class="insta-tile film"><span class="mini-play"></span></div>
+      <div class="insta-tile text-night"><span class="display">Every mark is a memory.</span></div>
+      <div class="insta-tile film"><span class="mini-play"></span></div>
+      <div class="insta-tile text-surface"><span class="display">No glass cases.</span></div>
+      <div class="insta-tile marks"><span class="mono">+ repaired collar</span></div>
+    </div>
+    <div class="insta-side">
+      <span class="section-label mono">07 &mdash; Instagram</span>
+      <h3 class="display">The feed is the film, not the shop window.</h3>
+      <ul class="insta-list">
+        <li><span class="plus mono">+</span>STORIES FROM THE WEARERS &mdash; cinematic interviews, the hero format</li>
+        <li><span class="plus mono">+</span>THE MARKS &mdash; macro carousels, annotated in amber</li>
+        <li><span class="plus mono">+</span>HALFTIME TALKS &mdash; manifesto &amp; football culture cards</li>
+        <li><span class="plus mono">+</span>SELLING &mdash; stories &amp; highlights only. never the feed</li>
+      </ul>
+      <div class="bio-box mono">SECOND HALF &#9508; Worn, not worn out. Real vintage shirts, real stories. ~&euro;100. One of each. The rack &darr;</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SECTION 08 — THE VOICE (DO / DON'T) ============ -->
+<section id="voice">
+  <span class="section-label mono">08 — The voice</span>
+  <div class="voice-columns">
+    <div class="voice-col say">
+      <div class="voice-col-header mono">We say</div>
+      <p class="voice-row display">Start its second half.</p>
+      <p class="voice-row display">Read the marks before you fall in love.</p>
+      <p class="voice-row display">It's been to three weddings.</p>
+      <p class="voice-row display">Around &euro;100. One of each.</p>
+    </div>
+    <div class="voice-col never">
+      <div class="voice-col-header mono">We never say</div>
+      <p class="voice-row display">Premium authentic vintage!</p>
+      <p class="voice-row display">Rare collector's item &mdash; invest now</p>
+      <p class="voice-row display">90% condition, minor defects</p>
+      <p class="voice-row display">SALE SALE SALE</p>
+    </div>
+  </div>
+</section>
+
+<footer class="mono">Second Half &mdash; brand book Vol. 1 &middot; The second half is yours.</footer>
+
+</body>
+</html>
