@@ -8,7 +8,9 @@
 
 Somebody wore this shirt to the match of their life. To the night they'll never forget. That's where the marks came from — and that's why they matter.
 
-**Second Half sells real vintage football shirts, really worn, honestly priced around €100.** Not mint pieces for glass cases. Not factory fakes with no past. Shirts with a first half behind them — looking for someone to write the second.
+**Second Half doesn't sell jerseys — it sells stories that start their second chapter with you.** Real vintage football shirts, really worn. Not mint pieces for glass cases. Not factory fakes with no past. Shirts with a first half behind them — looking for someone to write the second.
+
+**Found, not stocked.** Every shirt is scavenged one by one from individual sellers — never bought in batches. Uniqueness isn't a marketing claim; it's how the shop works. (Pricing target ~€100 is internal positioning — see voice rules: price is a consequence, never an argument.)
 
 **Tagline:** *The second half is yours.*
 
@@ -48,6 +50,7 @@ Somebody wore this shirt to the match of their life. To the night they'll never 
 | Start its second half (buy CTA) | "Add to cart", "Buy now" |
 | Wearers (customers, community) | "buyers", "collectors" |
 | Drop (a new small collection) | "new arrivals" |
+| Found, not stocked (sourcing) | "curated selection", "in stock" |
 | Stories from the Wearers (the films) | "testimonials", "reviews" |
 
 **Voice rules:**
@@ -55,6 +58,8 @@ Somebody wore this shirt to the match of their life. To the night they'll never 
 - Always honest about condition; never apologize for it. The marks are listed *before* the shirt is praised: "Read the marks before you fall in love."
 - Stories may be known or imagined — imagined ones are written so it's clear ("The fade says summers of five-a-side. The rest is yours to write."). Never fabricate provenance as fact.
 - Football-native, never gatekeeping. No "premium", no "authentic vintage!!", no "rare investment piece", no SALE shouting.
+- **Price is a consequence, never an argument.** It never appears on first-touch surfaces (bio, hero, packaging, ads) — only on the listing itself. People should fall for the shirt and the story, then be pleasantly surprised it isn't €250.
+- **The storyteller opens; the archivist follows.** First-touch surfaces never lead with "worn" or condition — leading with "worn" reads as "bad condition". The story comes first; the honest marks come once attention is earned. ("Worn, not worn out." stays a manifesto line — it's a rebuttal, not a greeting.)
 
 ## 5. Visual identity — Palette A "Sunday League"
 
@@ -100,7 +105,14 @@ Content pillars:
 3. **Halftime Talks** — manifesto/football-culture text cards in brand type.
 4. **Selling happens in Stories & Highlights only. Never the feed.** (Highlight: "The Rack".)
 
-Bio: `SECOND HALF — Worn, not worn out. Real vintage shirts, real stories. ~€100. One of each. The rack ↓`
+Bio:
+```
+SECOND HALF
+Every shirt has lived a first half.
+The second is yours.
+Real vintage, found one by one.
+```
+(No price, no shop link until the rack exists. Story first; the archivist voice stays inside posts.)
 
 ## 8. Reference brands (what we learned)
 
@@ -115,3 +127,4 @@ Bio: `SECOND HALF — Worn, not worn out. Real vintage shirts, real stories. ~�
 - 2026-07-28 — Name: **Second Half** (was placeholder, confirmed by concept fit). Market: English, EUR, ~€100 price point.
 - 2026-07-29 — Palette A "Sunday League" chosen over Golden Hour (B) and Kneipe (C). Black+yellow banned (Dortmund); "brand wears no club's colours" rule adopted.
 - Website = prototype only for now; Instagram launches brand-first (films, marks, manifesto), selling via Stories/Highlights.
+- 2026-07-29 — Bio rewritten story-first ("Every shirt has lived a first half…"). New rules: price is a consequence, never an argument (no price on first-touch surfaces); never lead with "worn" on first-touch surfaces; "Found, not stocked" adopted as sourcing principle (shirts scavenged one by one, never batches).
