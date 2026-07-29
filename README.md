@@ -18,17 +18,39 @@ This repository holds the brand, design assets, and (eventually) the website for
 | Instagram account | ✅ Created: [@startyoursecondhalf](https://www.instagram.com/startyoursecondhalf/), pitch avatar + bio set |
 | First post (manifesto carousel) | ✅ Assets ready in [brand-assets/post-01/](brand-assets/post-01/) — publish & pin |
 | Instagram launch kit (templates, grid plan, captions, cadence) | ✅ Complete — [mockups/instagram-kit.html](mockups/instagram-kit.html) |
-| Website | 🔶 Prototype only — [mockups/website-prototype.html](mockups/website-prototype.html): **layout approved, but still in a rejected dark/amber palette; needs re-skin to Sunday League before any further website work.** Not going live yet by explicit decision. |
-| Products / photography | ⬜ None yet — shirts to be scavenged one by one; no photos exist |
-| Commerce mechanics (checkout vs. contact-to-buy) | ⬜ Deliberately undecided — revisit when first shirts exist |
+| Website | ✅ Real Next.js site in [web/](web/) — Sunday League palette, showcase only (no checkout). See "The website" below. Not deployed/public yet. |
+| Products / photography | 🔶 5 real jerseys identified (founder's own, being resold as **private sales** — see legal notes). No photos yet; site still shows 3 illustrated placeholders. |
+| Commerce mechanics | ✅ Decided: **no checkout.** Sell via Kleinanzeigen (primary) or Instagram DM; site links out per shirt. |
+
+## Business & legal stage (read before suggesting any commerce feature)
+
+**Current stage: validation, not a registered business.** The founder is currently reselling **5 jerseys he already personally owned** (not sourced to flip) — this is an ordinary private sale, not commercial activity, under German law. No Gewerbe (trade licence) is registered. This directly shapes product decisions:
+
+- **No checkout, no payment processing, no live storefront.** Sales happen on Kleinanzeigen or via Instagram DM; the website only showcases and links out. Do not add cart/checkout/payment features without the founder explicitly confirming the business stage has changed.
+- **Instagram is content-only for now** — no active "shop" behaviour (no consistent public storefront selling an ongoing rotation of inventory).
+- **The trigger for going commercial**, if the idea validates: the founder deliberately starts **acquiring shirts specifically to resell** as an ongoing activity (vs. selling his own stuff). German law classifies based on behavior pattern (repetition, profit intent, organization), not on self-labeling or which sales channel is used — a "showcase-only" website or selling via Kleinanzeigen instead of a real storefront does **not** avoid this classification once sourcing-to-resell starts.
+- **When that trigger happens, before scaling up:**
+  1. Register a Gewerbe at the local Gewerbeamt (cheap, fast) and elect Kleinunternehmerregelung (§19 UStG) — as of 2025/2026 the thresholds are €25,000 prior-year / €100,000 current-year revenue, comfortably covering early volume.
+  2. Consider the margin scheme (Differenzbesteuerung, §25a UStG) since shirts are bought from private individuals with no deductible input VAT.
+  3. Get prior written approval from the founder's employer, as required by the secondary-occupation clause in his employment contract.
+  4. Fill in the real Impressum details (currently placeholders in `web/app/impressum/`).
+  5. Note: online marketplaces (including Kleinanzeigen) must report sellers to the Finanzamt past 30 transactions or €2,000/year revenue (Plattformen-Steuertransparenzgesetz / EU DAC7) — routing sales through Kleinanzeigen is not a way to stay unnoticed past that point.
+- None of the above is legal/tax advice — the founder should confirm specifics with a Steuerberater before scaling. This section exists so future work respects the current stage; don't re-litigate it, and don't push the site toward e-commerce features until the founder says the stage has changed.
+
+## The website (`web/`)
+
+Real Next.js (App Router, TypeScript) app, styled with CSS Modules + a `globals.css` token file carrying the Sunday League palette — no Tailwind utility classes used for the visual identity. See [web/README.md](web/README.md) for how to run it, add/sell a shirt, and what still needs filling in (Impressum details, real photos, Kleinanzeigen links) before it goes public. Not deployed anywhere yet — runs locally via `npm run dev --prefix web` (port 3000) or the `.claude/launch.json` "web" config.
+
+Key behaviour: each shirt card's CTA links to its `kleinanzeigenUrl` if set, otherwise falls back to "DM on Instagram to ask"; a `status: 'gone'` shirt shows a quiet "Gone to its second half" line instead of a CTA (never "sold out"). Data lives in `web/data/shirts.ts` — currently 3 illustrated placeholder shirts (Milan/Dortmund/Fiorentina), not the founder's real 5.
 
 ## Repository map
 
 ```
+web/                         ← the real website (Next.js) — see "The website" above
 docs/brand/BRAND.md          ← THE brand book: all decisions + decisions log
 mockups/brand-board.html     ← visual identity, one scrollable page (Sunday League)
 mockups/instagram-kit.html   ← IG templates at real dimensions, first-12 grid plan, caption formulas
-mockups/website-prototype.html ← approved layout, OUTDATED palette (re-skin pending)
+mockups/website-prototype.html ← superseded by web/ — kept for layout/copy reference only
 brand-assets/logo-mark.svg   ← canonical logo (+ -inverse for dark grounds, -small for ≲24px)
 brand-assets/avatar-*.png    ← 1080×1080 profile pictures (pitch = in use on IG)
 brand-assets/avatar-*.html   ← generators for the PNGs (see "Regenerating assets")
@@ -43,11 +65,12 @@ The brand sells **stories, not jerseys** — every shirt "has lived a first half
 ## Roadmap (agreed next steps, in order)
 
 1. **Publish & pin post-01** (founder action — assets ready).
-2. **Scavenge the first shirts** (founder action). Photograph each in the three brand moods: golden hour, night flash, macro on the marks (photography rules in BRAND.md §6).
-3. **Assemble posts 2–3** from the launch kit templates (wearer film cover, marks carousel) once photos exist; follow the first-12 grid rhythm in the kit.
-4. **Re-skin the website prototype** to Sunday League (layout stays; palette/tokens from BRAND.md §5).
-5. **Decide commerce mechanics** (contact-to-buy via DM vs. real checkout) — only when shirts are ready to sell.
-6. Later: packaging (programme-style insert card with the shirt's first half + blank "chapter two" page — noted in early brainstorm), and eventually the physical-shop dream.
+2. **Photograph the 5 real jerseys** in the three brand moods: golden hour, night flash, macro on the marks (photography rules in BRAND.md §6).
+3. **Replace the 3 placeholder shirts** in `web/data/shirts.ts` with the real 5 (real photos, real Kleinanzeigen listing URLs once posted).
+4. **Assemble Instagram posts 2–3** from the launch kit templates (wearer film cover, marks carousel) once photos exist; follow the first-12 grid rhythm in the kit.
+5. Fill in real Impressum details in `web/app/impressum/` and deploy (Vercel) once ready to go public.
+6. **If the idea validates and sourcing-to-resell starts**: work through the Business & legal stage checklist above (Gewerbe, Kleinunternehmerregelung, employer written approval, etc.) *before* scaling up sourcing or promotion.
+7. Later: packaging (programme-style insert card with the shirt's first half + blank "chapter two" page — noted in early brainstorm), and eventually the physical-shop dream.
 
 ## Working notes for future sessions (human or AI)
 
