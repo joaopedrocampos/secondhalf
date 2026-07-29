@@ -1,0 +1,38 @@
+.main {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 100px 24px 120px;
+}
+
+.heading {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: clamp(36px, 6vw, 52px);
+  color: var(--ink);
+  margin-bottom: 48px;
+}
+
+.section {
+  margin-bottom: 36px;
+}
+
+.section h2 {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--pitch);
+  margin-bottom: 12px;
+}
+
+.section p {
+  font-size: 16px;
+  color: var(--ink);
+  line-height: 1.7;
+}
+
+@media (max-width: 700px) {
+  .main {
+    padding: 72px 20px 88px;
+  }
+}

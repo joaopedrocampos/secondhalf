@@ -1,0 +1,54 @@
+.stories {
+  border-top: 1px solid var(--line);
+  padding: 100px 48px;
+  text-align: center;
+  max-width: 60ch;
+  margin: 0 auto;
+}
+
+.eyebrow {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: var(--pitch);
+  margin-bottom: 20px;
+}
+
+.heading {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(26px, 4vw, 38px);
+  margin-bottom: 20px;
+  color: var(--ink);
+}
+
+.body {
+  color: var(--sepia);
+  font-size: 16px;
+  margin-bottom: 36px;
+}
+
+.ghostBtn {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 16px 30px;
+  display: inline-block;
+  border: 1px solid var(--ink);
+  color: var(--ink);
+  transition: all 0.2s;
+}
+
+.ghostBtn:hover {
+  border-color: var(--pitch);
+  color: var(--pitch);
+}
+
+@media (max-width: 700px) {
+  .stories {
+    padding: 72px 20px;
+  }
+}

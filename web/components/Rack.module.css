@@ -1,0 +1,38 @@
+.rack {
+  padding: 100px 48px 40px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 48px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid var(--line);
+}
+
+.eyebrow {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 28px;
+  color: var(--ink);
+}
+
+.count {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--sepia);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 700px) {
+  .rack {
+    padding: 72px 20px 24px;
+  }
+}

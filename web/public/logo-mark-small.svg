@@ -1,0 +1,5 @@
+<svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Second Half kickoff circle mark, small sizes">
+  <circle cx="60" cy="60" r="48" fill="none" stroke="#35573B" stroke-width="4"/>
+  <path d="M60 10 A50 50 0 0 0 60 110 Z" fill="#35573B"/>
+  <path d="M60 2 L60 118" stroke="#35573B" stroke-width="4"/>
+</svg>
